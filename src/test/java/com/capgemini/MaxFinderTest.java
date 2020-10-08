@@ -44,4 +44,17 @@ public class MaxFinderTest {
 	public void true_if_maxfloat_at_third() {
 		assertEquals((Float) 30.0F, (Float) maxfinder.findMaxFloat(9.0F, 2.0F, 30.0F));
 	}
+	@Test
+	public void true_if_maxString_at_first() {
+		assertEquals("Peach",maxfinder.findMaxString("Peach","Apple","Banana"));
+	}
+	@Test
+	public void true_if_maxString_at_secind() {
+		assertEquals("Peach",maxfinder.findMaxString("Apple","Peach","Banana"));
+	}
+	@Test
+	public void true_if_maxString_at_third() {
+		assertEquals("Peach",maxfinder.findMaxString( "Banana", "Apple","Peach"));
+	}
+
 }
