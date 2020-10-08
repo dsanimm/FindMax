@@ -19,5 +19,8 @@ public class MaxFinder <E extends Comparable> {
 		 Arrays.sort(maxfinder.arr);
 		return (E) maxfinder.arr[maxfinder.arr.length-1];
 	}
+	public static <E extends Comparable> void  printMax(E max){
+		System.out.println("Maximum value is "+ max);
+	}
 
 }
